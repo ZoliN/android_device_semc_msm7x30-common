@@ -193,5 +193,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.low_ram=true
 
+# HACK: Use old Webkit for pmem compatibility
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.webview.provider=classic
+
 # proprietary side of the board
 $(call inherit-product, vendor/semc/msm7x30-common/msm7x30-common-vendor.mk)

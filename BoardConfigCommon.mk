@@ -116,3 +116,6 @@ TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/semc/msm7x30-common/releaset
 
 # CM Hardware tunables
 BOARD_HARDWARE_CLASS := device/semc/msm7x30-common/cmhw
+
+# HACK: Use old Webkit for pmem compatibility
+TARGET_FORCE_CPU_UPLOAD := true
